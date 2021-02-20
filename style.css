@@ -181,6 +181,51 @@ td.expense {
 }
 
 
+/* Modal ===================================*/
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    /* estende modal pelo tamanho total da página*/
+    top: 0;
+    display: flex;
+    align-items: center;
+    /*centraliza eixo y*/
+    justify-content: center;
+    /*centraliza eixo x*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #F0F2F5;
+    padding: 2.4rem;
+}
+
+
+/* Form ===================================*/
+
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+}
+
+
 /* Footer ===================================*/
 
 footer {
